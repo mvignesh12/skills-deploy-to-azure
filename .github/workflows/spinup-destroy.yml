@@ -13,7 +13,11 @@ env:
   ### Replace <username> with GitHub username ###
   ###############################################
   AZURE_WEBAPP_NAME: mvignesh12-ttt-app
-
+  
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   setup-up-azure-resources:
     runs-on: ubuntu-latest
